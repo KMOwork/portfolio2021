@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&family=Playfair+Display:wght@500&family=Roboto:ital,wght@0,300;0,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&family=Cormorant+Unicase:wght@600&family=Roboto:ital,wght@0,300;0,400;1,500&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -149,8 +149,8 @@ ul{
     left: 20%;
     display: flex;
     flex-direction: column;
-    font-family: 'Playfair Display', serif;
-    font-weight: 500;
+    font-family: 'Cormorant Unicase', serif;
+    font-weight: 600;
     font-size: 3rem;
     letter-spacing: .3rem;
 }
@@ -161,29 +161,31 @@ ul{
 .menuLINK{
     position: relative;
     display: inline-block;
-    height: 59px;
+    height: 48px;
     text-decoration: none;
     color: rgb(255, 238, 168);
 }
 .MUstrikethrough{
     position: absolute;
-    top: 40%;
-    width: 100%;
+    top: 46%;
+    width: 0;
+    /* width: 100%;
     transform: scaleX(0);
     transform-origin: 0 0;
-    transition: all ease .2s;
+    transition: all ease .2s; */
     pointer-events: none;
 }
 .MUstrikethrough span{
     position: relative;
     display: block;
     width: 100%;
-    height: 2px;
+    height: 1px;
     background-color: white;
     margin-bottom: 3px;
 }
 .menuLINK:hover .MUstrikethrough{
-    transform: scaleX(1);
+    /* transform: scaleX(1); */
+    animation: BTNstrikethrough .5s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
 }
 .MENUc{
     position: relative;
@@ -226,8 +228,8 @@ ul{
     z-index: 997;
 }
 .BtnP{
-    font-family: 'Playfair Display', serif;
-    font-weight: 500;
+    font-family: 'Cormorant Unicase', serif;
+    font-weight: 600;
     font-size: 2.5rem;
     letter-spacing: .2rem;
 }
@@ -237,24 +239,48 @@ ul{
 .BP{
     color: black;
 }
+@keyframes BTNstrikethrough {
+    0% {
+      width: 0%;
+      left: 0;
+    }
+    30% {
+      width: 100%;
+      left: 0;
+    }
+    60% {
+      width: 0;
+      left: 100%;
+    }
+    61% {
+        width: 0;
+        left: 0%;
+    }
+    100% {
+        width: 100%;
+        left: 0;
+    }
+  }
 .strikethrough{
     position: absolute;
-    top: 40%;
-    width: 100%;
+    top: 36%;
+    /* width: 100%;
     transform: scaleX(0);
-    transform-origin: 0 0;
+    transform-origin: 0 0; */
+    width: 0;
 }
 .strikethrough span{
     position: relative;
     display: block;
     width: 100%;
-    height: 2px;
+    height: 1px;
     background-color: rgb(255, 204, 0);
     margin-bottom: 3px;
 }
 .BtnA a:hover ~ div{
-    transform: scaleX(1);
-    transition: all ease .2s;
+    /* transform: scaleX(1);
+    transition: all ease .2s; */
+    animation: BTNstrikethrough .5s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
 }
 /* main */
 section{
