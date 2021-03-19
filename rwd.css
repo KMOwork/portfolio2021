@@ -321,8 +321,9 @@
         word-break: break-all;
     }
     .Wtpb{
-        left: 4px;
-        top: 2px;
+        left: 3px;
+        top: 3px;
+        padding: 0 4px;
     }
     .WTPp4{
         white-space: normal;
@@ -523,6 +524,10 @@
         line-height: 3rem;
         word-break: break-all;
     }
+    .Wtpb{
+        left: 4px;
+        padding: 0 5px;
+    }
     .WTPp2{
         right: 33%;
     }
@@ -650,6 +655,10 @@
         font-size: 5rem;
         line-height: normal;
         word-break: normal;
+    }
+    .Wtpb{
+        left: 0px;
+        padding: 0 10px;
     }
     .WTPp2{
         right: 67%;

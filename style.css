@@ -853,17 +853,23 @@ h2{
 .Wtpb{
     position: absolute;
     color: black;
-    left: 7px;
-    top: 3px;
+    left: 0px;
+    top: 4px;
+    /* border: 5px black solid; */
+    padding: 0 10px;
+    background-size: 26px 26px;
+    background-image: linear-gradient( 45deg, rgba(0, 0, 0, 1) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 75%, transparent 75%,  transparent);
 }
 .Wtpw{
     position: absolute;
     color: white;
-    left: 0;
+    left: 4px;
     top: 0;
+    /* border: 3px white solid; */
+    padding: 0 0;
 }
 .WTPp1, .WTPp3, .WTPp5{
-    left: 43%;
+    left: 41%;
 }
 .WTPp2{
     right: 67%;
