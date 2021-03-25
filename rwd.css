@@ -242,18 +242,12 @@
     }
     .ICONIMGrwd{
         position: relative;
-        margin: 0 2px 0 0;
+        margin: 0 5% ;
     }
     .FATICONrwd{
         margin: 0 8px 0 8px;
     }
     .ICONIMGrwd img{
-        height: 45px;
-    }
-    .LICONrwd img{
-        height: 36px;
-    }
-    .FATICONrwd img{
         width: 45px;
     }
     .SCPrwd{
@@ -610,7 +604,7 @@
         top: 20%;
     }
     .S2C{
-        top: 73%;
+        top: 70%;
     }
     .S1c1, .S1c2, .S1c3, .S2c1, .S2c2{
         flex-direction: row;
