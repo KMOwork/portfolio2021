@@ -486,6 +486,9 @@ h2{
 }
 .Pfront, .Pback, .Ifront, .Iback, .E1front, .E1back, .E2front, .E2back, .Iback_rwd, .E1back_rwd, .E2front_rwd, .E2back_rwd, .E3front_rwd, .E3back_rwd{
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility:hidden;
     transition: 0.6s;
     transform-style: preserve-3d;
 }
