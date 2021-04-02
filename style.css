@@ -447,7 +447,7 @@ h2{
     max-height: 700px;
     margin: auto;
 }
-.Acontents p{
+.Ap{
     color: white;
     font-family: 'Noto Sans TC';
     font-weight: 300;
@@ -455,6 +455,14 @@ h2{
     line-height: 2rem;
     letter-spacing: .3rem;
     padding: 0;
+}
+.Asmallp{
+    color: white;
+    font-family: 'Noto Sans TC';
+    font-weight: 300;
+    font-size: .8rem;
+    line-height: 1.5rem;
+    letter-spacing: .3rem;
 }
 .A1, .A2{
     position: relative;
@@ -466,25 +474,25 @@ h2{
 .photo, .introduction, .ep1, .ep2{
     position: absolute;
 }
-.Ifront, .E1front, .E2front, .E2front_rwd, .E3front_rwd{
+.Ifront, .Ifront_rwd, .E1front, .E2front, .E1front_rwd, .E2front_rwd, .E3front_rwd, .E4front_rwd{
     background-color: black;
 }
-.Iback_rwd, .E1back_rwd, .E2back_rwd, .E3back_rwd{
+.Ifront_rwd, .Iback_rwd, .E1front_rwd, .E1back_rwd, .E2back_rwd, .E3back_rwd, .E4front_rwd, .E4back_rwd{
     display: none;
 }
-.Pfront, .Pback, .Ifront, .Iback, .E1front, .E1back, .E2front, .E2back, .Iback_rwd, .E1back_rwd, .E2front_rwd, .E2back_rwd, .E3front_rwd, .E3back_rwd{
+.Pfront, .Pback, .Ifront, .Iback, .Ifront_rwd, .Iback_rwd, .E1front, .E1back, .E2front, .E2back, .E1front_rwd, .E1back_rwd, .E2front_rwd, .E2back_rwd, .E3front_rwd, .E3back_rwd, .E4front_rwd, .E4back_rwd{
     position: absolute;
 }
 .photo{
     width: 300px;
     height: 300px;
-    top: 23%;
-    left: 16%;
+    top: 25%;
+    left: 3%;
 }
-.Pback, .Iback, .E1back, .E2back, .Iback_rwd, .E1back_rwd, .E2back_rwd, .E3back_rwd{
+.Pback, .Iback, .E1back, .E2back, .Iback_rwd, .E1back_rwd, .E2back_rwd, .E3back_rwd, .E4back_rwd{
     transform: rotateY(-180deg);
 }
-.Pfront, .Pback, .Ifront, .Iback, .E1front, .E1back, .E2front, .E2back, .Iback_rwd, .E1back_rwd, .E2front_rwd, .E2back_rwd, .E3front_rwd, .E3back_rwd{
+.Pfront, .Pback, .Ifront, .Iback, .E1front, .E1back, .E2front, .E2back, .Ifront_rwd, .Iback_rwd, .E1front_rwd, .E1back_rwd, .E2front_rwd, .E2back_rwd, .E3front_rwd, .E3back_rwd, .E4front_rwd, .E4back_rwd{
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
@@ -492,18 +500,18 @@ h2{
     transition: 0.6s;
     transform-style: preserve-3d;
 }
-.photo:hover .Pback, .introduction:hover .Iback, .ep1:hover .E1back, .ep2:hover .E2back, .introduction:hover .Iback_rwd, .ep1:hover .E1back_rwd, .ep2_rwd:hover .E2back_rwd, .ep3_rwd:hover .E3back_rwd{
+.photo:hover .Pback, .introduction:hover .Iback, .ep1:hover .E1back, .ep2:hover .E2back, .introduction:hover .Iback_rwd, .ep1:hover .E1back_rwd, .ep2_rwd:hover .E2back_rwd, .ep3_rwd:hover .E3back_rwd, .ep4_rwd:hover .E4back_rwd{
     transform: rotateY(0deg);
 }
-.photo:hover .Pfront, .introduction:hover .Ifront, .ep1:hover .E1front, .ep2:hover .E2front, .ep2_rwd:hover .E2front_rwd, .ep3_rwd:hover .E3front_rwd{
+.photo:hover .Pfront, .introduction:hover .Ifront, .ep1:hover .E1front, .ep2:hover .E2front, .introduction:hover .Ifront_rwd, .ep1:hover .E1front_rwd, .ep2_rwd:hover .E2front_rwd, .ep3_rwd:hover .E3front_rwd, .ep4_rwd:hover .E4front_rwd{
     transform: rotateY(180deg);
 }
 .introduction{
     width: 480px;
     height: 300px;
     margin: 0 0;
-    top: 58%;
-    right: -50px;
+    top: 62%;
+    right: -6%;
 }
 .Ifront{
     width: 100%;
@@ -515,36 +523,29 @@ h2{
 }
 .ep1, .ep2{
     width: 420px;
+    height: 420px;
     margin: 0 0 0 0;
 }
-.ep2_rwd, .ep3_rwd{
+.ep2_rwd, .ep3_rwd, .ep4_rwd{
     display: none;
 }
 .ep1{
-    height: 220px;
-    top: 15%;
-    left: -25%;
+    top: 10%;
+    left: -31%;
 }
-.E1front{
+.E1front,.E2front{
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .ep2{
-    height: 380px;
-    top: 37%;
-    right: 0;
+    top: 46%;
+    right: 2%;
 }
-.E2front{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.E1front p, .E2front p, .E2front_rwd p, .E3front_rwd p{
+.E1front p, .E2front p{
     width: 292px;
 }
 .Rbtna{
