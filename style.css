@@ -491,20 +491,32 @@ h2{
 }
 .Pback, .Iback, .E1back, .E2back, .Iback_rwd, .E1back_rwd, .E2back_rwd, .E3back_rwd, .E4back_rwd{
     transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
 }
 .Pfront, .Pback, .Ifront, .Iback, .E1front, .E1back, .E2front, .E2back, .Ifront_rwd, .Iback_rwd, .E1front_rwd, .E1back_rwd, .E2front_rwd, .E2back_rwd, .E3front_rwd, .E3back_rwd, .E4front_rwd, .E4back_rwd{
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
     -ms-backface-visibility:hidden;
     transition: 0.6s;
     transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
 }
 .photo:hover .Pback, .introduction:hover .Iback, .ep1:hover .E1back, .ep2:hover .E2back, .introduction:hover .Iback_rwd, .ep1:hover .E1back_rwd, .ep2_rwd:hover .E2back_rwd, .ep3_rwd:hover .E3back_rwd, .ep4_rwd:hover .E4back_rwd{
     transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
 }
 .photo:hover .Pfront, .introduction:hover .Ifront, .ep1:hover .E1front, .ep2:hover .E2front, .introduction:hover .Ifront_rwd, .ep1:hover .E1front_rwd, .ep2_rwd:hover .E2front_rwd, .ep3_rwd:hover .E3front_rwd, .ep4_rwd:hover .E4front_rwd{
     transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
 }
 .introduction{
     width: 480px;
@@ -702,12 +714,16 @@ h2{
     width: 100%;
     height: 100%;
 }
-.S1Chover{
+.S1Chover, .S2Chover{
     transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+}
+.S1Chover{
     transform-origin: left;
 }
 .S2Chover{
-    transform: scaleX(0);
     transform-origin: right;
 }
 .hoverIMG{
@@ -766,6 +782,9 @@ h2{
 }
 .Pblock:hover ~ div, .Pblock:focus ~ div{
     transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    -ms-transform: scaleX(1);
     transition: all ease .2s;
 }
 .s1c1UL{
@@ -829,10 +848,16 @@ h2{
 }
 .Wimg img{
     transform: scale(1,1);
+    -webkit-transform: scale(1,1);
+    -o-transform: scale(1,1);
+    -ms-transform: scale(1,1);
     transition: all 1s ease-out;
 }
 .Wimg img:hover{
     transform:scale(1.2,1.2);
+    -webkit-transform:scale(1.2,1.2);
+    -o-transform:scale(1.2,1.2);
+    -ms-transform:scale(1.2,1.2);
 }
 .Wmask{
     position: absolute;
@@ -1005,14 +1030,23 @@ h2{
 }
 .Cicon2:hover, .Cicon4:hover, .Cicon5:hover, .Cicon6:hover{
     transform: translateY(8px);
+    -webkit-transform: translateY(8px);
+    -o-transform: translateY(8px);
+    -ms-transform: translateY(8px);
     transition: all ease .3s;
 }
 .Cicon1:hover, .Cicon3:hover{
     transform: translateY(-8px);
+    -webkit-transform: translateY(-8px);
+    -o-transform: translateY(-8px);
+    -ms-transform: translateY(-8px);
     transition: all ease .3s;
 }
 .Cicon1:hover .CiconEX, .Cicon3:hover .CiconEX{
     transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    -o-transform: scaleY(1);
+    -ms-transform: scaleY(1);
     transition: all ease .2s;
 }
 .C1c-icon img, .C2c-icon img{
@@ -1020,6 +1054,9 @@ h2{
 }
 .CiconEX{
     transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+    -o-transform: scaleY(0);
+    -ms-transform: scaleY(0);
     transform-origin: 0 0;
     position: absolute;
     top: 100%;
